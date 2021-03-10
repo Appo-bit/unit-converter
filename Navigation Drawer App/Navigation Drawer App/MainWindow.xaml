@@ -14,12 +14,12 @@
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
-        
+
         <!--// Toggle Button Style Template //-->
 
         <ImageBrush x:Key="tb_mouse_over"
                     ImageSource="Assets/tgBtn_MouseOver.png"/>
-        
+
         <!--// Text font style //-->
 
         <Style x:Key="font_style" TargetType="TextBlock">
@@ -40,7 +40,7 @@
                     Value="20"/>
 
         </Style>
-        
+
         <!--// Tooltip Style Template //-->
 
         <Style TargetType="ToolTip" x:Key="tt_style">
@@ -61,7 +61,7 @@
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
 
         </Style>
-        
+
         <!--// App Close Button Style Template //-->
 
         <ImageBrush x:Key="CloseBtn_MouseOver" ImageSource="Assets/closeBtn_MouseOver.png"/>
@@ -78,7 +78,7 @@
                                 BorderThickness="0"
                                 Background="{TemplateBinding Background}"
                                 SnapsToDevicePixels="True">
-                            
+
                         </Border>
 
                         <ControlTemplate.Triggers>
@@ -91,15 +91,15 @@
                                         Value="{StaticResource CloseBtn_MouseOver}"/>
 
                             </Trigger>
-                            
+
                         </ControlTemplate.Triggers>
-                        
+
                     </ControlTemplate>
-                    
+
                 </Setter.Value>
-                
+
             </Setter>
-            
+
         </Style>
 
 
@@ -145,25 +145,25 @@
                                         Value="{StaticResource tb_mouse_over}"/>
 
                             </Trigger>
-                            
+
                         </ControlTemplate.Triggers>
-                        
+
                     </ControlTemplate>
-                    
+
                 </Setter.Value>
-                
+
             </Setter>
-            
+
         </Style>
-        
+
     </Window.Resources>
-    
+
     <Grid>
-        
+
         <!--// Background Color //-->
 
         <Grid Background="Black">
-            
+
             <!--// Background Image //-->
 
             <Grid x:Name="BG" PreviewMouseLeftButtonDown="BG_PreviewMouseLeftButtonDown">
@@ -175,9 +175,20 @@
                                 Stretch="Fill"/>
 
                 </Grid.Background>
-                
+                <Button Content="Button" HorizontalAlignment="Left" Margin="321,325,0,0" VerticalAlignment="Top" Width="204" Height="40" Click="Button_Click"/>
+                <ComboBox x:Name="ComboBoxFromVolume" HorizontalAlignment="Left" Margin="240,222,0,0" VerticalAlignment="Top" Width="120">
+                    <ComboBoxItem Content="kilogram"/>
+                    <ComboBoxItem Content="tonna"/>
+                </ComboBox>
+                <ComboBox x:Name="ComboBoxToVolume" HorizontalAlignment="Left" Margin="439,222,0,0" VerticalAlignment="Top" Width="120">
+                    <ComboBoxItem Content="kilogram"/>
+                    <ComboBoxItem Content="tonna"/>
+                </ComboBox>
+                <TextBox x:Name="TextBoxFrom" HorizontalAlignment="Left" Height="23" Margin="240,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="TextBoxTo" HorizontalAlignment="Left" Height="23" Margin="439,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
             </Grid>
-            
+
             <!--// App Close Button //-->
 
             <Grid>
@@ -207,12 +218,12 @@
                         <ImageBrush ImageSource="Assets/closeBtn_default.png"/>
 
                     </Button.Background>
-                    
+
                 </Button>
 
             </Grid>
-            
-            
+
+
             <!--// Navigation Panel //-->
 
             <Grid   x:Name="nav_pnl"
@@ -223,9 +234,9 @@
                 <StackPanel x:Name="st_pnl">
 
                     <!--// Grid for the Menu Toggle Button //-->
-                    
+
                     <Grid Height="90">
-                        
+
                         <!--// Menu title text //-->
 
                         <TextBlock  Grid.Row="1"
@@ -249,9 +260,9 @@
                                                    Color="White"/>
 
                             </TextBlock.Effect>
-                            
+
                         </TextBlock>
-                        
+
                         <!--// Toggle Button //-->
 
                         <ToggleButton x:Name="Tg_Btn"
@@ -263,7 +274,7 @@
                                       Width="30"
                                       BorderThickness="0"
                                       Style="{StaticResource tb_style}" Unchecked="Tg_Btn_Unchecked" Checked="Tg_Btn_Checked">
-                            
+
                             <!--// Toggle button default background image //-->
 
                             <ToggleButton.Background>
@@ -272,7 +283,7 @@
                                             Stretch="None"/>
 
                             </ToggleButton.Background>
-                            
+
                             <!--// Toggle Button - Checked, Unchecked events //-->
 
                             <ToggleButton.Triggers>
@@ -289,14 +300,14 @@
                                                 Storyboard.TargetProperty="Width"
                                                 BeginTime="0:0:0"
                                                 From="230" To="65"
-                                                Duration="0:0:0.2">                                                
-                                                
+                                                Duration="0:0:0.2">
+
                                             </DoubleAnimation>
-                                            
+
                                         </Storyboard>
-                                        
+
                                     </BeginStoryboard>
-                                    
+
                                 </EventTrigger>
 
                                 <EventTrigger RoutedEvent="ToggleButton.Checked">
@@ -311,23 +322,23 @@
                                                 Storyboard.TargetProperty="Width"
                                                 BeginTime="0:0:0"
                                                 From="65" To="230"
-                                                Duration="0:0:0.3">                                                
-                                                
+                                                Duration="0:0:0.3">
+
                                             </DoubleAnimation>
-                                            
+
                                         </Storyboard>
-                                        
+
                                     </BeginStoryboard>
-                                    
+
                                 </EventTrigger>
-                                
+
                             </ToggleButton.Triggers>
-                            
-                            
+
+
                         </ToggleButton>
-                        
+
                     </Grid>
-                    
+
                     <!--// ListView with menu list items //-->
 
                     <ListView  x:Name="LV"
@@ -336,7 +347,7 @@
                                ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
                         <!--// Home //-->
-                        
+
                         <ListViewItem HorizontalAlignment="Left"
                                       Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter"
                                       >
@@ -352,8 +363,8 @@
                                            Margin="25,0,0,0"
                                            Style="{StaticResource font_style}"/>
 
-                            </StackPanel> 
-                            
+                            </StackPanel>
+
                             <!--// Tooltip //-->
 
                             <ListViewItem.ToolTip>
@@ -364,8 +375,8 @@
 
                             </ListViewItem.ToolTip>
 
-                        </ListViewItem> 
-                        
+                        </ListViewItem>
+
                         <!--// Contacts //-->
 
                         <ListViewItem HorizontalAlignment="Left"
@@ -396,7 +407,7 @@
                             </ListViewItem.ToolTip>
 
                         </ListViewItem>
-                        
+
                         <!--// Messages //-->
 
                         <ListViewItem HorizontalAlignment="Left"
@@ -427,7 +438,7 @@
                             </ListViewItem.ToolTip>
 
                         </ListViewItem>
-                        
+
                         <!--// Maps //-->
 
                         <ListViewItem HorizontalAlignment="Left"
@@ -458,7 +469,7 @@
                             </ListViewItem.ToolTip>
 
                         </ListViewItem>
-                        
+
                         <!--// Settings //-->
 
                         <ListViewItem HorizontalAlignment="Left"
@@ -489,7 +500,7 @@
                             </ListViewItem.ToolTip>
 
                         </ListViewItem>
-                        
+
                         <!--// Sign Out //-->
 
                         <ListViewItem HorizontalAlignment="Left"
@@ -520,7 +531,7 @@
                             </ListViewItem.ToolTip>
 
                         </ListViewItem>
-                        
+
                         <!--// Listview items style template //-->
 
                         <ListView.ItemContainerStyle>
@@ -566,28 +577,28 @@
                                                             Value="#404D5B"/>
 
                                                 </MultiTrigger>
-                                                
+
                                             </ControlTemplate.Triggers>
-                                            
+
                                         </ControlTemplate>
-                                        
+
                                     </Setter.Value>
-                                    
+
                                 </Setter>
-                                
+
                             </Style>
-                            
+
                         </ListView.ItemContainerStyle>
 
                     </ListView>
-                    
+
                 </StackPanel>
-                
-                
+
+
             </Grid>
-            
+
         </Grid>
-        
+
     </Grid>
-    
+
 </Window>

@@ -13,5 +13,6 @@ namespace Navigation_Drawer_App
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

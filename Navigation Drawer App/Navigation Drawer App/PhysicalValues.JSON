@@ -1,0 +1,50 @@
+﻿{
+  "Time": [
+    {
+      "index": 0,
+      "name": "second",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "minute",
+      "inCI": 60
+    }
+  ],
+  "Distance": [
+    {
+      "index": 0,
+      "name": "meter",
+      "inCI": 1
+    }
+  ],
+  "Speed": [
+    {
+      "index": 0,
+      "name": "meter/second",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "kilometer/hour",
+      "inCI": 3.6
+    }
+  ],
+  "Weight": [
+    {
+      "index": 0,
+      "name": "kilogram",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "tonna",
+      "inCI": 1000
+    },
+    {
+      "index": 2,
+      "name": "gram",
+      "inCI": 0.001
+    }
+  ]
+}

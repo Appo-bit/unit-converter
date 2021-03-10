@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UnitConverter;
 
 namespace Navigation_Drawer_App
 {
@@ -20,8 +21,10 @@ namespace Navigation_Drawer_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        ConverterWithJson converter;
         public MainWindow()
         {
+            converter = new ConverterWithJson("..\\..\\PhysicalValues.JSON");
             InitializeComponent();
         }
 
@@ -67,6 +70,14 @@ namespace Navigation_Drawer_App
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            converter.CategoryOfValue = "Weight";
+            converter.IndexForVolumeFrom = ComboBoxFromVolume.SelectedIndex;
+            converter.IndexForVolumeTo = ComboBoxToVolume.SelectedIndex;
+            TextBoxTo.Text = converter.ConvertVolume(Double.Parse(TextBoxFrom.Text)).ToString();
         }
     }
 }
