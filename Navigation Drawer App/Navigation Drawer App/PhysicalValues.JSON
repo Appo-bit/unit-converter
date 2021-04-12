@@ -1,4 +1,80 @@
 ﻿{
+  "Temperature": [
+    {
+      "index": 0,
+      "name": "kelvin",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "celsius",
+      "inCI": -272.1
+    },
+    {
+      "index": 2,
+      "name": "fahrenheit",
+      "inCI": -457.9
+    },
+    {
+      "index": 3,
+      "name": "reaumur",
+      "inCI": -217.7
+    }
+  ],
+
+  "Square": [
+    {
+      "index": 0,
+      "name": "square meter",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "square kilometer",
+      "inCI": 0.000001
+    },
+    {
+      "index": 2,
+      "name": "hectare",
+      "inCI": 0.0001
+    },
+    {
+      "index": 3,
+      "name": "square decimeter",
+      "inCI": 100
+    },
+    {
+      "index": 4,
+      "name": "square sentimeter",
+      "inCI": 10000
+    },
+    {
+      "index": 5,
+      "name": "square millimeter",
+      "inCI": 1000000
+    },
+    {
+      "index": 6,
+      "name": "square mile",
+      "inCI": 0.0000003861
+    },
+    {
+      "index": 7,
+      "name": "square yard",
+      "inCI": 1.196
+    },
+    {
+      "index": 8,
+      "name": "square ft",
+      "inCI": 10.76
+    },
+    {
+      "index": 9,
+      "name": "square inch",
+      "inCI": 1550
+    }
+  ],
+
   "Time": [
     {
       "index": 0,
@@ -9,6 +85,46 @@
       "index": 1,
       "name": "minute",
       "inCI": 60
+    },
+    {
+      "index": 2,
+      "name": "hour",
+      "inCI": 0.0002778
+    },
+    {
+      "index": 3,
+      "name": "milisecond",
+      "inCI": 1000
+    },
+    {
+      "index": 4,
+      "name": "day",
+      "inCI": 0.00001157
+    },
+    {
+      "index": 5,
+      "name": "week",
+      "inCI": 0.000001653
+    },
+    {
+      "index": 6,
+      "name": "month",
+      "inCI": 0.0000003803
+    },
+    {
+      "index": 7,
+      "name": "Gregorian year",
+      "inCI": 0.00000003169
+    },
+    {
+      "index": 8,
+      "name": "Julian year",
+      "inCI": 0.00000003169
+    },
+    {
+      "index": 9,
+      "name": "century",
+      "inCI": 0.0000000003169
     }
   ],
   "Distance": [
@@ -16,6 +132,56 @@
       "index": 0,
       "name": "meter",
       "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "decimeter",
+      "inCI": 10
+    },
+    {
+      "index": 2,
+      "name": "kilometer",
+      "inCI": 0.001
+    },
+    {
+      "index": 3,
+      "name": "centimeter",
+      "inCI": 100
+    },
+    {
+      "index": 4,
+      "name": "mile",
+      "inCI": 0.0006214
+    },
+    {
+      "index": 5,
+      "name": "inch",
+      "inCI": 39.37
+    },
+    {
+      "index": 6,
+      "name": "ft",
+      "inCI": 3.281
+    },
+    {
+      "index": 7,
+      "name": "yard",
+      "inCI": 1.094
+    },
+    {
+      "index": 8,
+      "name": "nautical mile",
+      "inCI": 0.00054
+    },
+    {
+      "index": 9,
+      "name": "millimeter",
+      "inCI": 1000
+    },
+    {
+      "index": 10,
+      "name": "micron",
+      "inCI": 1000000
     }
   ],
   "Speed": [
@@ -28,6 +194,56 @@
       "index": 1,
       "name": "kilometer/hour",
       "inCI": 3.6
+    },
+    {
+      "index": 2,
+      "name": "kilometer/second",
+      "inCI": 0.0001
+    },
+    {
+      "index": 3,
+      "name": "kilometer/minute",
+      "inCI": 0.06
+    },
+    {
+      "index": 4,
+      "name": "meter/minute",
+      "inCI": 60
+    },
+    {
+      "index": 5,
+      "name": "meter/hour",
+      "inCI": 3600
+    },
+    {
+      "index": 6,
+      "name": "mile/hour",
+      "inCI": 2.237
+    },
+    {
+      "index": 7,
+      "name": "mile/second",
+      "inCI": 0.0006214
+    },
+    {
+      "index": 8,
+      "name": "nautical mile/hour",
+      "inCI": 1.944
+    },
+    {
+      "index": 9,
+      "name": "nautical mile/hour",
+      "inCI": 1.944
+    },
+    {
+      "index": 10,
+      "name": "speed of sound in air",
+      "inCI": 0.002941
+    },
+    {
+      "index": 11,
+      "name": "light speed in vacuum",
+      "inCI": 0.000000003336
     }
   ],
   "Weight": [
@@ -45,6 +261,229 @@
       "index": 2,
       "name": "gram",
       "inCI": 0.001
+    },
+    {
+      "index": 3,
+      "name": "carat",
+      "inCI": 5000
+    },
+    {
+      "index": 4,
+      "name": "kiloton",
+      "inCI": 0.000001
+    },
+    {
+      "index": 5,
+      "name": "pound",
+      "inCI": 2.205
+    },
+    {
+      "index": 6,
+      "name": "ounce",
+      "inCI": 35.57
+    },
+    {
+      "index": 7,
+      "name": "Planck mass",
+      "inCI": 45945087
+    }
+  ],
+
+  "Density": [
+    {
+      "index": 0,
+      "name": "kilogram/cubic meter",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "tonna/cubic meter",
+      "inCI": 0.001
+    },
+    {
+      "index": 2,
+      "name": "gram/cubic meter",
+      "inCI": 1000
+    },
+    {
+      "index": 3,
+      "name": "kilogram/liter",
+      "inCI": 0.001
+    },
+    {
+      "index": 4,
+      "name": "gram/liter",
+      "inCI": 1
+    },
+    {
+      "index": 5,
+      "name": "pound/cubic yard",
+      "inCI": 1.686
+    },
+    {
+      "index": 6,
+      "name": "pound/cubic ft",
+      "inCI": 0.06243
+    },
+    {
+      "index": 7,
+      "name": "pound/gallon USA",
+      "inCI": 0.008345
+    },
+    {
+      "index": 8,
+      "name": "pound/cubic inch",
+      "inCI": 0.00003613
+    },
+    {
+      "index": 9,
+      "name": "ounces/cubic yard",
+      "inCI": 26.97
+    },
+    {
+      "index": 10,
+      "name": "ounces/cubic ft",
+      "inCI": 0.9988
+    },
+    {
+      "index": 11,
+      "name": "ounces/cubic inch",
+      "inCI": 0.000578
+    },
+    {
+      "index": 12,
+      "name": "ounces/gallon UK",
+      "inCI": 0.1604
+    },
+    {
+      "index": 13,
+      "name": "ounces/gallon USA",
+      "inCI": 0.1335
+    }
+  ],
+
+  "Data storage": [
+    {
+      "index": 0,
+      "name": "megabyte",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "kilobyte",
+      "inCI": 1024
+    },
+    {
+      "index": 2,
+      "name": "byte",
+      "inCI": 1048576
+    },
+    {
+      "index": 3,
+      "name": "gigabyte",
+      "inCI": 0.0009766
+    },
+    {
+      "index": 4,
+      "name": "terabyte",
+      "inCI": 0.0000009537
+    },
+    {
+      "index": 5,
+      "name": "petabyte",
+      "inCI": 0.0000000009313
+    },
+    {
+      "index": 6,
+      "name": "exabyte",
+      "inCI": 0.0000000000009095
+    },
+    {
+      "index": 7,
+      "name": "megabit",
+      "inCI": 8
+    },
+    {
+      "index": 8,
+      "name": "kilobit",
+      "inCI": 8192
+    },
+    {
+      "index": 9,
+      "name": "bit",
+      "inCI": 8388608
+    },
+    {
+      "index": 10,
+      "name": "gigabit",
+      "inCI": 0.007813
+    },
+    {
+      "index": 11,
+      "name": "terabit",
+      "inCI": 0.000007629
+    },
+    {
+      "index": 12,
+      "name": "petabit",
+      "inCI": 0.000000007451
+    },
+    {
+      "index": 13,
+      "name": "exabyte",
+      "inCI": 0.000000000007276
+    }
+  ],
+  "Baud Rate": [
+    {
+      "index": 0,
+      "name": "megabyte/second",
+      "inCI": 1
+    },
+    {
+      "index": 1,
+      "name": "kilobyte/second",
+      "inCI": 1000
+    },
+    {
+      "index": 2,
+      "name": "byte/second",
+      "inCI": 1000000
+    },
+    {
+      "index": 3,
+      "name": "gigabyte/second",
+      "inCI": 0.001
+    },
+    {
+      "index": 4,
+      "name": "terabyte/second",
+      "inCI": 0.000001
+    },
+    {
+      "index": 5,
+      "name": "megabit/second",
+      "inCI": 8
+    },
+    {
+      "index": 6,
+      "name": "kilobit/second",
+      "inCI": 8000
+    },
+    {
+      "index": 7,
+      "name": "bit/second",
+      "inCI": 8000000
+    },
+    {
+      "index": 8,
+      "name": "gigabit/second",
+      "inCI": 0.008
+    },
+    {
+      "index": 9,
+      "name": "terabit/second",
+      "inCI": 0.000008
     }
   ]
 }
